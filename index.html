@@ -3,8 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Soeurs Attiree - Fashion Boutique</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Soeurs Attiree</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        header {
+            background: black;
+            color: white;
+            padding: 20px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 10px;
+            background: #333;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .collection {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+            flex-wrap: wrap;
+        }
+        .collection img {
+            width: 300px;
+            border-radius: 10px;
+        }
+        .cta {
+            margin: 20px;
+        }
+        .about, .contact {
+            padding: 20px;
+        }
+        footer {
+            background: #333;
+            color: white;
+            padding: 20px;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -12,25 +59,37 @@
         <p>Exclusive Fashion Collection</p>
     </header>
     
-    <section class="gallery">
-        <h2>Our Collection</h2>
-        <div class="image-grid">
-            <img src="fashion1.jpg" alt="Fashion Image 1">
-            <img src="fashion2.jpg" alt="Fashion Image 2">
-            <img src="fashion3.jpg" alt="Fashion Image 3">
-            <img src="fashion4.jpg" alt="Fashion Image 4">
-
-
-        </div>
+    <nav>
+        <a href="#collection">Collection</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+        <a href="#shop">Shop Now</a>
+    </nav>
+    
+    <section id="collection" class="collection">
+        <img src="fashion1.jpg" alt="Fashion 1">
+        <img src="fashion2.jpg" alt="Fashion 2">
+        <img src="fashion3.jpg" alt="Fashion 3">
+        <img src="fashion4.jpg" alt="Fashion 4">
     </section>
     
-    <section class="instagram">
-        <h2>Follow Us on Instagram</h2>
-        <p><a href="https://www.instagram.com/soeurs_attiree" target="_blank">@soeurs_attiree</a></p>
+    <div class="cta">
+        <button onclick="location.href='#shop'" style="padding: 10px 20px; font-size: 18px;">Shop Now</button>
+    </div>
+    
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>Soeurs Attiree is your go-to destination for exclusive fashion pieces. Our goal is to bring stylish, high-quality outfits to fashion lovers worldwide.</p>
+    </section>
+    
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>Email: contact@soeursattiree.com</p>
+        <p>Follow us on <a href="#">Instagram</a> | <a href="#">Facebook</a> | <a href="#">Pinterest</a></p>
     </section>
     
     <footer>
-        <p>&copy; 2025 Soeurs Attiree. All rights reserved.</p>
+        <p>&copy; 2025 Soeurs Attiree. All Rights Reserved.</p>
     </footer>
 </body>
 </html>

@@ -7,7 +7,14 @@ body {
 }
 
 header {
-    background-color: #000;
+    background: url('background.jpg') no-repeat center center;
+    background-size: cover;
+    height: 300px; /* Adjust height as needed */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     color: white;
     padding: 20px;
 }

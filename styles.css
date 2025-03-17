@@ -31,8 +31,11 @@ header::before {
 }
 
 header h1, header p {
-    position: relative;
-    z-index: 1; /* Keeps text above overlay */
+    color: #FFD700; /* Gold color */
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Adds contrast */
+}
+
 }
 
 
